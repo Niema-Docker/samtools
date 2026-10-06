@@ -3,7 +3,7 @@ FROM alpine:latest
 
 # install samtools
 RUN apk update && \
-    apk add bash bzip2-dev g++ make xz-dev zlib-dev && \
+    apk add --no-cache bash bzip2-dev g++ make xz-dev zlib-dev && \
     wget -qO- "https://github.com/samtools/samtools/releases/download/1.24/samtools-1.24.tar.bz2" | tar -xj && \
     cd samtools-* && \
     ./configure --without-curses && \
