@@ -1,6 +1,5 @@
 # Minimal Docker image for samtools using Alpine base
 FROM alpine:3.13.5
-MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install samtools
 RUN apk update && \
