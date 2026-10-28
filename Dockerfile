@@ -7,7 +7,6 @@ RUN apk update && \
     wget -qO- "https://github.com/samtools/samtools/releases/download/1.25/samtools-1.25.tar.bz2" | tar -xj && \
     cd samtools-* && \
     ./configure --without-curses && \
-    make && \
     make install && \
     cd .. && \
     rm -rf samtools-*
